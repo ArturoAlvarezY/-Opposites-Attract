@@ -1,4 +1,4 @@
-const theresLove = (firstPetal, secondPetal) =>
+export const theresLove = (firstPetal, secondPetal) =>
 {
     let love= ''
 if(firstPetal % 2 === 0 && secondPetal %2 !==0){
@@ -14,4 +14,3 @@ else{
 return love;
 };
 
-theresLove()
