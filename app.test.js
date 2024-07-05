@@ -30,6 +30,16 @@ describe('theresLove', () => {
         expect(result).toBe(true);
         expect(result).toBeTypeOf("boolean");
     })
+
+    it('if timmy doesnt count petals and sara too, return false', () => {
+        const timmysPetal = 0;
+        const sarahsPetal = 0;
+        const result = theresLove(timmysPetal, sarahsPetal);
+
+        expect(result).toBe(false);
+        expect(result).toBeTypeOf("boolean");
+    })
+   
    
 
 
