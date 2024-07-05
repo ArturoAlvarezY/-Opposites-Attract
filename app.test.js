@@ -22,7 +22,14 @@ describe('theresLove', () => {
         expect(result).toBeTypeOf("boolean");
     });
     
-   
+    it('if timmy doesnt count petals and Sarah counts one, return true', () => {
+        const timmysPetal = 0;
+        const sarahsPetal = 1;
+        const result = theresLove(timmysPetal, sarahsPetal);
+
+        expect(result).toBe(true);
+        expect(result).toBeTypeOf("boolean");
+    })
    
 
 
